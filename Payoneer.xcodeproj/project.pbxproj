@@ -18,6 +18,7 @@
 		232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB672656C1CC00172930 /* HTTPMethod.swift */; };
 		232FBB6A2656C1E700172930 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB692656C1E700172930 /* Networking.swift */; };
 		232FBB6C2656C20A00172930 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB6B2656C20A00172930 /* Routing.swift */; };
+		232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB6F2656C29100172930 /* PaymentRoutes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		232FBB672656C1CC00172930 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		232FBB692656C1E700172930 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		232FBB6B2656C20A00172930 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		232FBB6F2656C29100172930 /* PaymentRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRoutes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		232FBB352656C18B00172930 /* Payoneer */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB6D2656C27300172930 /* Scenes */,
 				232FBB662656C1BD00172930 /* Networking */,
 				232FBB362656C18B00172930 /* AppDelegate.swift */,
 				232FBB382656C18B00172930 /* SceneDelegate.swift */,
@@ -138,11 +141,27 @@
 		232FBB662656C1BD00172930 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB6E2656C28200172930 /* Routes */,
 				232FBB672656C1CC00172930 /* HTTPMethod.swift */,
 				232FBB692656C1E700172930 /* Networking.swift */,
-				232FBB6B2656C20A00172930 /* Routing.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		232FBB6D2656C27300172930 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		232FBB6E2656C28200172930 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB6B2656C20A00172930 /* Routing.swift */,
+				232FBB6F2656C29100172930 /* PaymentRoutes.swift */,
+			);
+			path = Routes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */,
 				232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */,
 				232FBB6A2656C1E700172930 /* Networking.swift in Sources */,
 				232FBB6C2656C20A00172930 /* Routing.swift in Sources */,
