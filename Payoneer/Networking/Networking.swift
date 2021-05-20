@@ -7,7 +7,7 @@
 
 import Combine
 
-public protocol Networking {
+protocol Networking {
   func run<T: Decodable>(_ route: Routing, completion: @escaping (Result<T, Error>) -> Void)
   func run<T>(_ route: Routing) -> AnyPublisher<T, Error> where T : Decodable
 }
