@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,15 @@
 		232FBB922656CFFA00172930 /* CharacterSet+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB912656CFFA00172930 /* CharacterSet+Payoneer.swift */; };
 		232FBB942656D03500172930 /* URLSession+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB932656D03500172930 /* URLSession+Payoneer.swift */; };
 		232FBB962656D07C00172930 /* Dictionary+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB952656D07C00172930 /* Dictionary+Payoneer.swift */; };
+		232FBB992656D3BD00172930 /* PaymentListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB982656D3BD00172930 /* PaymentListCellViewModel.swift */; };
+		232FBB9C2656D3DF00172930 /* PaymentListCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB9B2656D3DF00172930 /* PaymentListCellViewModelFactory.swift */; };
+		232FBB9E2656D3F800172930 /* PaymentListTableViewDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB9D2656D3F800172930 /* PaymentListTableViewDataFactory.swift */; };
+		232FBBA02656D89F00172930 /* PaymentListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB9F2656D89F00172930 /* PaymentListDataSource.swift */; };
+		232FBBA22656D9AD00172930 /* PaymentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA12656D9AD00172930 /* PaymentListCell.swift */; };
+		232FBBA42656DA0100172930 /* UITableView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA32656DA0100172930 /* UITableView+Payoneer.swift */; };
+		232FBBA62656DA4D00172930 /* UITableViewCell+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA52656DA4D00172930 /* UITableViewCell+Payoneer.swift */; };
+		232FBBA82656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA72656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift */; };
+		232FBBAB2656DD2F00172930 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 232FBBAA2656DD2F00172930 /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +96,14 @@
 		232FBB912656CFFA00172930 /* CharacterSet+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Payoneer.swift"; sourceTree = "<group>"; };
 		232FBB932656D03500172930 /* URLSession+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Payoneer.swift"; sourceTree = "<group>"; };
 		232FBB952656D07C00172930 /* Dictionary+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBB982656D3BD00172930 /* PaymentListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListCellViewModel.swift; sourceTree = "<group>"; };
+		232FBB9B2656D3DF00172930 /* PaymentListCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListCellViewModelFactory.swift; sourceTree = "<group>"; };
+		232FBB9D2656D3F800172930 /* PaymentListTableViewDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewDataFactory.swift; sourceTree = "<group>"; };
+		232FBB9F2656D89F00172930 /* PaymentListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListDataSource.swift; sourceTree = "<group>"; };
+		232FBBA12656D9AD00172930 /* PaymentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListCell.swift; sourceTree = "<group>"; };
+		232FBBA32656DA0100172930 /* UITableView+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBBA52656DA4D00172930 /* UITableViewCell+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBBA72656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewFooterHeaderView+Payoneer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232FBBAB2656DD2F00172930 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,12 +219,15 @@
 		232FBB7F2656C36000172930 /* PaymentListScene */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB9A2656D3D300172930 /* Factories */,
+				232FBB972656D3B100172930 /* Cell */,
 				232FBB722656C35C00172930 /* PaymentListPresenter.swift */,
 				232FBB732656C35C00172930 /* PaymentListRouter.swift */,
 				232FBB742656C35C00172930 /* PaymentListContracts.swift */,
 				232FBB752656C35C00172930 /* PaymentListViewController.swift */,
 				232FBB762656C35C00172930 /* PaymentListBuilder.swift */,
 				232FBB772656C35C00172930 /* PaymentListInteractor.swift */,
+				232FBB9F2656D89F00172930 /* PaymentListDataSource.swift */,
 			);
 			path = PaymentListScene;
 			sourceTree = "<group>";
@@ -219,6 +240,9 @@
 				232FBB912656CFFA00172930 /* CharacterSet+Payoneer.swift */,
 				232FBB932656D03500172930 /* URLSession+Payoneer.swift */,
 				232FBB952656D07C00172930 /* Dictionary+Payoneer.swift */,
+				232FBBA32656DA0100172930 /* UITableView+Payoneer.swift */,
+				232FBBA52656DA4D00172930 /* UITableViewCell+Payoneer.swift */,
+				232FBBA72656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +265,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		232FBB972656D3B100172930 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB982656D3BD00172930 /* PaymentListCellViewModel.swift */,
+				232FBBA12656D9AD00172930 /* PaymentListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		232FBB9A2656D3D300172930 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB9B2656D3DF00172930 /* PaymentListCellViewModelFactory.swift */,
+				232FBB9D2656D3F800172930 /* PaymentListTableViewDataFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,6 +299,9 @@
 			dependencies = (
 			);
 			name = Payoneer;
+			packageProductDependencies = (
+				232FBBAA2656DD2F00172930 /* Nuke */,
+			);
 			productName = Payoneer;
 			productReference = 232FBB332656C18B00172930 /* Payoneer.app */;
 			productType = "com.apple.product-type.application";
@@ -328,6 +373,9 @@
 				Base,
 			);
 			mainGroup = 232FBB2A2656C18B00172930;
+			packageReferences = (
+				232FBBA92656DD2F00172930 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 232FBB342656C18B00172930 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,7 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232FBB9C2656D3DF00172930 /* PaymentListCellViewModelFactory.swift in Sources */,
 				232FBB7D2656C35C00172930 /* PaymentListBuilder.swift in Sources */,
+				232FBBA02656D89F00172930 /* PaymentListDataSource.swift in Sources */,
 				232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */,
 				232FBB8C2656CAE800172930 /* PaymentLink.swift in Sources */,
 				232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */,
@@ -380,18 +430,24 @@
 				232FBB882656C8FC00172930 /* PaymentList.swift in Sources */,
 				232FBB7A2656C35C00172930 /* PaymentListRouter.swift in Sources */,
 				232FBB6A2656C1E700172930 /* Networking.swift in Sources */,
+				232FBB9E2656D3F800172930 /* PaymentListTableViewDataFactory.swift in Sources */,
 				232FBB6C2656C20A00172930 /* Routing.swift in Sources */,
 				232FBB8A2656CAD300172930 /* Network.swift in Sources */,
 				232FBB3B2656C18B00172930 /* ViewController.swift in Sources */,
 				232FBB942656D03500172930 /* URLSession+Payoneer.swift in Sources */,
 				232FBB7B2656C35C00172930 /* PaymentListContracts.swift in Sources */,
+				232FBB992656D3BD00172930 /* PaymentListCellViewModel.swift in Sources */,
+				232FBBA42656DA0100172930 /* UITableView+Payoneer.swift in Sources */,
 				232FBB852656C74800172930 /* PaymentListService.swift in Sources */,
 				232FBB962656D07C00172930 /* Dictionary+Payoneer.swift in Sources */,
 				232FBB922656CFFA00172930 /* CharacterSet+Payoneer.swift in Sources */,
 				232FBB372656C18B00172930 /* AppDelegate.swift in Sources */,
+				232FBBA62656DA4D00172930 /* UITableViewCell+Payoneer.swift in Sources */,
 				232FBB392656C18B00172930 /* SceneDelegate.swift in Sources */,
 				232FBB8E2656CFA700172930 /* NativeNetwork.swift in Sources */,
+				232FBBA82656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift in Sources */,
 				232FBB902656CFDA00172930 /* URLRequest+Payoneer.swift in Sources */,
+				232FBBA22656D9AD00172930 /* PaymentListCell.swift in Sources */,
 				232FBB792656C35C00172930 /* PaymentListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +773,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		232FBBA92656DD2F00172930 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		232FBBAA2656DD2F00172930 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 232FBBA92656DD2F00172930 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 232FBB2B2656C18B00172930 /* Project object */;
 }

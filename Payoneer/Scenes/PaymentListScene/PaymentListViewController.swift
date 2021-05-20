@@ -23,11 +23,13 @@ final class PaymentListViewController: UIViewController {
 
 private extension PaymentListViewController {
   func setup() {
+    view.backgroundColor = .systemBackground
     setupTableView()
   }
 
   func setupTableView() {
     view.addSubview(tableView)
+    tableView.backgroundColor = .systemBackground
     tableView.pinToSafeArea()
   }
 }
