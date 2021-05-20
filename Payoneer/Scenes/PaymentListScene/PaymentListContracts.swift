@@ -17,7 +17,8 @@ protocol PaymentListInteractorProtocol: AnyObject {
 }
 
 enum PaymentListInteractorOutput {
-
+  case payments(PaymentList)
+  case error(Error)
 }
 
 protocol PaymentListInteractorDelegate: AnyObject {
@@ -30,8 +31,8 @@ protocol PaymentListPresenterProtocol: AnyObject {
   func onViewDidLoad()
 }
 
-enum PaymentListPresenterOutput: Equatable {
-
+enum PaymentListPresenterOutput {
+  case showPaymentMethods([PaymentListCellViewModel])
 }
 
 // MARK: - View
@@ -42,7 +43,7 @@ protocol PaymentListViewProtocol: AnyObject {
 
 // MARK: - Router
 enum PaymentListRoute: Equatable {
-
+  case showMessage(message: String)
 }
 
 protocol PaymentListRouterProtocol: AnyObject {

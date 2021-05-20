@@ -13,14 +13,13 @@ final class PaymentListBuilder {
   static func make() -> PaymentListViewController {
     let view = PaymentListViewController()
     let router = PaymentListRouter(view)
-    //        let networkWorker = NetworkWorker(app.networking)
-    //        let service = RestaurantListService(networkWorker, database: DbWorker(Database()))
-    //        //        MovieListInteractor(app.service)
     let service = PaymentListService(networking: NativeNetwork(decoder: JSONDecoder()))
     let interactor = PaymentListInteractor(service: service)
-    //        let interactor = PaymentListInteractor(service)
-    let presenter = PaymentListPresenter(view, interactor: interactor, router: router)
+    
+    let dataFactory = PaymentListTableViewDataFactory(factory: PaymentListCellViewModelFactory())
+    let presenter = PaymentListPresenter(view, interactor: interactor, dataFactory: dataFactory, router: router)
     view.presenter = presenter
+
     return view
   }
 }

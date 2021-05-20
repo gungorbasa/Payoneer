@@ -10,6 +10,7 @@ import UIKit
 
 final class PaymentListViewController: UIViewController {
   private let tableView = UITableView.autolayoutView()
+  private lazy var dataSource = PaymentListDataSource(tableView: tableView)
 
   var presenter: PaymentListPresenterProtocol?
 
@@ -27,22 +28,16 @@ private extension PaymentListViewController {
 
   func setupTableView() {
     view.addSubview(tableView)
-    tableView.dataSource = self
     tableView.pinToSafeArea()
-  }
-}
-
-extension PaymentListViewController: UITableViewDataSource {
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 0 }
-
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    UITableViewCell()
   }
 }
 
 extension PaymentListViewController: PaymentListViewProtocol {
 
   func handleOutput(_ output: PaymentListPresenterOutput) {
-
+    switch output {
+    case .showPaymentMethods(let viewModels):
+      dataSource.applySnapshot(with: viewModels)
+    }
   }
 }

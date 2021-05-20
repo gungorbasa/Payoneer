@@ -19,12 +19,12 @@ final class PaymentListInteractor: PaymentListInteractorProtocol {
   }
 
   func fetchPaymentList() {
-    service.fetch { result in
+    service.fetch { [weak self] result in
       switch result {
       case .success(let paymentList):
-        print("Payment List: \(paymentList)")
+        self?.delegate?.handleOutput(.payments(paymentList))
       case .failure(let error):
-        print("Show error! \(error.localizedDescription)")
+        self?.delegate?.handleOutput(.error(error))
       }
     }
   }
