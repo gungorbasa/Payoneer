@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum HTTPResponseError: Error {
+  case badURL
+}
+
 enum HTTPMethod: String {
   case get = "GET"
   case post = "POST"
