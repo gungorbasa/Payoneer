@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Interactor
-protocol PaymentListInteractorProtocol: class {
+protocol PaymentListInteractorProtocol: AnyObject {
 
     var delegate: PaymentListInteractorDelegate? { get set }
 }
@@ -18,13 +18,13 @@ enum PaymentListInteractorOutput {
 
 }
 
-protocol PaymentListInteractorDelegate: class {
+protocol PaymentListInteractorDelegate: AnyObject {
 
     func handleOutput(_ output: PaymentListInteractorOutput)
 }
 
 // MARK: - Presenter
-protocol PaymentListPresenterProtocol: class {
+protocol PaymentListPresenterProtocol: AnyObject {
 
 }
 
@@ -33,7 +33,7 @@ enum PaymentListPresenterOutput: Equatable {
 }
 
 // MARK: - View
-protocol PaymentListViewProtocol: class {
+protocol PaymentListViewProtocol: AnyObject {
 
     func handleOutput(_ output: PaymentListPresenterOutput)
 }
@@ -43,7 +43,7 @@ enum PaymentListRoute: Equatable {
 
 }
 
-protocol PaymentListRouterProtocol: class {
+protocol PaymentListRouterProtocol: AnyObject {
 
     func navigate(to route: PaymentListRoute)
 }

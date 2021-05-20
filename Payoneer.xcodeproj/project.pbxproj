@@ -10,7 +10,6 @@
 		232FBB372656C18B00172930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB362656C18B00172930 /* AppDelegate.swift */; };
 		232FBB392656C18B00172930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB382656C18B00172930 /* SceneDelegate.swift */; };
 		232FBB3B2656C18B00172930 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB3A2656C18B00172930 /* ViewController.swift */; };
-		232FBB3E2656C18B00172930 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232FBB3C2656C18B00172930 /* Main.storyboard */; };
 		232FBB402656C18D00172930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 232FBB3F2656C18D00172930 /* Assets.xcassets */; };
 		232FBB432656C18D00172930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232FBB412656C18D00172930 /* LaunchScreen.storyboard */; };
 		232FBB4E2656C18D00172930 /* PayoneerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB4D2656C18D00172930 /* PayoneerTests.swift */; };
@@ -19,7 +18,6 @@
 		232FBB6A2656C1E700172930 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB692656C1E700172930 /* Networking.swift */; };
 		232FBB6C2656C20A00172930 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB6B2656C20A00172930 /* Routing.swift */; };
 		232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB6F2656C29100172930 /* PaymentRoutes.swift */; };
-		232FBB782656C35C00172930 /* PaymentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232FBB712656C35C00172930 /* PaymentList.storyboard */; };
 		232FBB792656C35C00172930 /* PaymentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB722656C35C00172930 /* PaymentListPresenter.swift */; };
 		232FBB7A2656C35C00172930 /* PaymentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB732656C35C00172930 /* PaymentListRouter.swift */; };
 		232FBB7B2656C35C00172930 /* PaymentListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB742656C35C00172930 /* PaymentListContracts.swift */; };
@@ -51,7 +49,6 @@
 		232FBB362656C18B00172930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		232FBB382656C18B00172930 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		232FBB3A2656C18B00172930 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		232FBB3D2656C18B00172930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		232FBB3F2656C18D00172930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		232FBB422656C18D00172930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		232FBB442656C18D00172930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		232FBB692656C1E700172930 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		232FBB6B2656C20A00172930 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		232FBB6F2656C29100172930 /* PaymentRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRoutes.swift; sourceTree = "<group>"; };
-		232FBB712656C35C00172930 /* PaymentList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentList.storyboard; sourceTree = "<group>"; };
 		232FBB722656C35C00172930 /* PaymentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListPresenter.swift; sourceTree = "<group>"; };
 		232FBB732656C35C00172930 /* PaymentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListRouter.swift; sourceTree = "<group>"; };
 		232FBB742656C35C00172930 /* PaymentListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListContracts.swift; sourceTree = "<group>"; };
@@ -129,7 +125,6 @@
 				232FBB362656C18B00172930 /* AppDelegate.swift */,
 				232FBB382656C18B00172930 /* SceneDelegate.swift */,
 				232FBB3A2656C18B00172930 /* ViewController.swift */,
-				232FBB3C2656C18B00172930 /* Main.storyboard */,
 				232FBB3F2656C18D00172930 /* Assets.xcassets */,
 				232FBB412656C18D00172930 /* LaunchScreen.storyboard */,
 				232FBB442656C18D00172930 /* Info.plist */,
@@ -185,7 +180,6 @@
 		232FBB7F2656C36000172930 /* PaymentListScene */ = {
 			isa = PBXGroup;
 			children = (
-				232FBB712656C35C00172930 /* PaymentList.storyboard */,
 				232FBB722656C35C00172930 /* PaymentListPresenter.swift */,
 				232FBB732656C35C00172930 /* PaymentListRouter.swift */,
 				232FBB742656C35C00172930 /* PaymentListContracts.swift */,
@@ -309,8 +303,6 @@
 			files = (
 				232FBB432656C18D00172930 /* LaunchScreen.storyboard in Resources */,
 				232FBB402656C18D00172930 /* Assets.xcassets in Resources */,
-				232FBB3E2656C18B00172930 /* Main.storyboard in Resources */,
-				232FBB782656C35C00172930 /* PaymentList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,14 +376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		232FBB3C2656C18B00172930 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				232FBB3D2656C18B00172930 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		232FBB412656C18D00172930 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -9,7 +9,7 @@
 import UIKit
 
 final class PaymentListViewController: UIViewController {
-  private let tableView = UITableView()
+  private let tableView = UITableView.autolayoutView()
 
   var presenter: PaymentListPresenterProtocol!
 
@@ -17,9 +17,25 @@ final class PaymentListViewController: UIViewController {
     super.viewDidLoad()
     setup()
   }
+}
 
-  private func setup() {
+private extension PaymentListViewController {
+  func setup() {
+    setupTableView()
+  }
 
+  func setupTableView() {
+    view.addSubview(tableView)
+    tableView.dataSource = self
+    tableView.pinToSafeArea()
+  }
+}
+
+extension PaymentListViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { 0 }
+
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    UITableViewCell()
   }
 }
 
