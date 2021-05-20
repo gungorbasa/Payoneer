@@ -10,6 +10,22 @@ import Foundation
 
 final class PaymentListInteractor: PaymentListInteractorProtocol {
 
-    weak var delegate: PaymentListInteractorDelegate?
+  weak var delegate: PaymentListInteractorDelegate?
 
+  private let service: PaymentListServing
+
+  init(service: PaymentListServing) {
+    self.service = service
+  }
+
+  func fetchPaymentList() {
+    service.fetch { result in
+      switch result {
+      case .success(let paymentList):
+        print("Payment List: \(paymentList)")
+      case .failure(let error):
+        print("Show error! \(error.localizedDescription)")
+      }
+    }
+  }
 }

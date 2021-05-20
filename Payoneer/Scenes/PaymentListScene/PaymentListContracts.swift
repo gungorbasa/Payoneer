@@ -11,7 +11,9 @@ import Foundation
 // MARK: - Interactor
 protocol PaymentListInteractorProtocol: AnyObject {
 
-    var delegate: PaymentListInteractorDelegate? { get set }
+  var delegate: PaymentListInteractorDelegate? { get set }
+
+  func fetchPaymentList()
 }
 
 enum PaymentListInteractorOutput {
@@ -20,12 +22,12 @@ enum PaymentListInteractorOutput {
 
 protocol PaymentListInteractorDelegate: AnyObject {
 
-    func handleOutput(_ output: PaymentListInteractorOutput)
+  func handleOutput(_ output: PaymentListInteractorOutput)
 }
 
 // MARK: - Presenter
 protocol PaymentListPresenterProtocol: AnyObject {
-
+  func onViewDidLoad()
 }
 
 enum PaymentListPresenterOutput: Equatable {
@@ -35,7 +37,7 @@ enum PaymentListPresenterOutput: Equatable {
 // MARK: - View
 protocol PaymentListViewProtocol: AnyObject {
 
-    func handleOutput(_ output: PaymentListPresenterOutput)
+  func handleOutput(_ output: PaymentListPresenterOutput)
 }
 
 // MARK: - Router
@@ -45,5 +47,5 @@ enum PaymentListRoute: Equatable {
 
 protocol PaymentListRouterProtocol: AnyObject {
 
-    func navigate(to route: PaymentListRoute)
+  func navigate(to route: PaymentListRoute)
 }

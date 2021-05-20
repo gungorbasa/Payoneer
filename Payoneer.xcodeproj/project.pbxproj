@@ -25,6 +25,15 @@
 		232FBB7D2656C35C00172930 /* PaymentListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB762656C35C00172930 /* PaymentListBuilder.swift */; };
 		232FBB7E2656C35C00172930 /* PaymentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB772656C35C00172930 /* PaymentListInteractor.swift */; };
 		232FBB822656C40A00172930 /* UIView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB812656C40A00172930 /* UIView+Payoneer.swift */; };
+		232FBB852656C74800172930 /* PaymentListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB842656C74800172930 /* PaymentListService.swift */; };
+		232FBB882656C8FC00172930 /* PaymentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB872656C8FC00172930 /* PaymentList.swift */; };
+		232FBB8A2656CAD300172930 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB892656CAD300172930 /* Network.swift */; };
+		232FBB8C2656CAE800172930 /* PaymentLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB8B2656CAE800172930 /* PaymentLink.swift */; };
+		232FBB8E2656CFA700172930 /* NativeNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB8D2656CFA700172930 /* NativeNetwork.swift */; };
+		232FBB902656CFDA00172930 /* URLRequest+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB8F2656CFDA00172930 /* URLRequest+Payoneer.swift */; };
+		232FBB922656CFFA00172930 /* CharacterSet+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB912656CFFA00172930 /* CharacterSet+Payoneer.swift */; };
+		232FBB942656D03500172930 /* URLSession+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB932656D03500172930 /* URLSession+Payoneer.swift */; };
+		232FBB962656D07C00172930 /* Dictionary+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB952656D07C00172930 /* Dictionary+Payoneer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +78,15 @@
 		232FBB762656C35C00172930 /* PaymentListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListBuilder.swift; sourceTree = "<group>"; };
 		232FBB772656C35C00172930 /* PaymentListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListInteractor.swift; sourceTree = "<group>"; };
 		232FBB812656C40A00172930 /* UIView+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBB842656C74800172930 /* PaymentListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListService.swift; sourceTree = "<group>"; };
+		232FBB872656C8FC00172930 /* PaymentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentList.swift; sourceTree = "<group>"; };
+		232FBB892656CAD300172930 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		232FBB8B2656CAE800172930 /* PaymentLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentLink.swift; sourceTree = "<group>"; };
+		232FBB8D2656CFA700172930 /* NativeNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetwork.swift; sourceTree = "<group>"; };
+		232FBB8F2656CFDA00172930 /* URLRequest+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBB912656CFFA00172930 /* CharacterSet+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBB932656D03500172930 /* URLSession+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBB952656D07C00172930 /* Dictionary+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Payoneer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +137,7 @@
 		232FBB352656C18B00172930 /* Payoneer */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB862656C84A00172930 /* Models */,
 				232FBB802656C3FA00172930 /* Extensions */,
 				232FBB6D2656C27300172930 /* Scenes */,
 				232FBB662656C1BD00172930 /* Networking */,
@@ -153,9 +172,11 @@
 		232FBB662656C1BD00172930 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB832656C73A00172930 /* Services */,
 				232FBB6E2656C28200172930 /* Routes */,
 				232FBB672656C1CC00172930 /* HTTPMethod.swift */,
 				232FBB692656C1E700172930 /* Networking.swift */,
+				232FBB8D2656CFA700172930 /* NativeNetwork.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -194,8 +215,30 @@
 			isa = PBXGroup;
 			children = (
 				232FBB812656C40A00172930 /* UIView+Payoneer.swift */,
+				232FBB8F2656CFDA00172930 /* URLRequest+Payoneer.swift */,
+				232FBB912656CFFA00172930 /* CharacterSet+Payoneer.swift */,
+				232FBB932656D03500172930 /* URLSession+Payoneer.swift */,
+				232FBB952656D07C00172930 /* Dictionary+Payoneer.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		232FBB832656C73A00172930 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB842656C74800172930 /* PaymentListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		232FBB862656C84A00172930 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB872656C8FC00172930 /* PaymentList.swift */,
+				232FBB8B2656CAE800172930 /* PaymentLink.swift */,
+				232FBB892656CAD300172930 /* Network.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,17 +372,26 @@
 			files = (
 				232FBB7D2656C35C00172930 /* PaymentListBuilder.swift in Sources */,
 				232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */,
+				232FBB8C2656CAE800172930 /* PaymentLink.swift in Sources */,
 				232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */,
 				232FBB822656C40A00172930 /* UIView+Payoneer.swift in Sources */,
 				232FBB7E2656C35C00172930 /* PaymentListInteractor.swift in Sources */,
 				232FBB7C2656C35C00172930 /* PaymentListViewController.swift in Sources */,
+				232FBB882656C8FC00172930 /* PaymentList.swift in Sources */,
 				232FBB7A2656C35C00172930 /* PaymentListRouter.swift in Sources */,
 				232FBB6A2656C1E700172930 /* Networking.swift in Sources */,
 				232FBB6C2656C20A00172930 /* Routing.swift in Sources */,
+				232FBB8A2656CAD300172930 /* Network.swift in Sources */,
 				232FBB3B2656C18B00172930 /* ViewController.swift in Sources */,
+				232FBB942656D03500172930 /* URLSession+Payoneer.swift in Sources */,
 				232FBB7B2656C35C00172930 /* PaymentListContracts.swift in Sources */,
+				232FBB852656C74800172930 /* PaymentListService.swift in Sources */,
+				232FBB962656D07C00172930 /* Dictionary+Payoneer.swift in Sources */,
+				232FBB922656CFFA00172930 /* CharacterSet+Payoneer.swift in Sources */,
 				232FBB372656C18B00172930 /* AppDelegate.swift in Sources */,
 				232FBB392656C18B00172930 /* SceneDelegate.swift in Sources */,
+				232FBB8E2656CFA700172930 /* NativeNetwork.swift in Sources */,
+				232FBB902656CFDA00172930 /* URLRequest+Payoneer.swift in Sources */,
 				232FBB792656C35C00172930 /* PaymentListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

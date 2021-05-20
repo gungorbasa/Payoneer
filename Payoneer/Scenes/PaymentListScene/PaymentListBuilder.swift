@@ -16,7 +16,8 @@ final class PaymentListBuilder {
     //        let networkWorker = NetworkWorker(app.networking)
     //        let service = RestaurantListService(networkWorker, database: DbWorker(Database()))
     //        //        MovieListInteractor(app.service)
-    let interactor = PaymentListInteractor()
+    let service = PaymentListService(networking: NativeNetwork(decoder: JSONDecoder()))
+    let interactor = PaymentListInteractor(service: service)
     //        let interactor = PaymentListInteractor(service)
     let presenter = PaymentListPresenter(view, interactor: interactor, router: router)
     view.presenter = presenter

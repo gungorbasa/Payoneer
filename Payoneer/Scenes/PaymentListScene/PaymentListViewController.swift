@@ -11,11 +11,12 @@ import UIKit
 final class PaymentListViewController: UIViewController {
   private let tableView = UITableView.autolayoutView()
 
-  var presenter: PaymentListPresenterProtocol!
+  var presenter: PaymentListPresenterProtocol?
 
   override func viewDidLoad() {
     super.viewDidLoad()
     setup()
+    presenter?.onViewDidLoad()
   }
 }
 
