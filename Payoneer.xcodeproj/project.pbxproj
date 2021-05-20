@@ -43,6 +43,16 @@
 		232FBBA62656DA4D00172930 /* UITableViewCell+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA52656DA4D00172930 /* UITableViewCell+Payoneer.swift */; };
 		232FBBA82656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA72656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift */; };
 		232FBBAB2656DD2F00172930 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 232FBBAA2656DD2F00172930 /* Nuke */; };
+		232FBBB02656DFD100172930 /* PaymentListCellViewModelFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBAF2656DFD100172930 /* PaymentListCellViewModelFactoryTests.swift */; };
+		232FBBB22656E18600172930 /* PaymentListTableViewDataFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBB12656E18600172930 /* PaymentListTableViewDataFactoryTests.swift */; };
+		232FBBB52656E36E00172930 /* MockPaymentListCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBB42656E36E00172930 /* MockPaymentListCellViewModelFactory.swift */; };
+		232FBBB72656E3B900172930 /* PaymentListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBB62656E3B900172930 /* PaymentListPresenterTests.swift */; };
+		232FBBBA2656F27A00172930 /* MockPaymentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBB92656F27A00172930 /* MockPaymentListView.swift */; };
+		232FBBBC2656F2B600172930 /* MockPaymentListTableViewDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBBB2656F2B600172930 /* MockPaymentListTableViewDataFactory.swift */; };
+		232FBBBE2656F2DC00172930 /* MockPaymentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBBD2656F2DC00172930 /* MockPaymentListInteractor.swift */; };
+		232FBBC02656F2FA00172930 /* MockPaymentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBBF2656F2FA00172930 /* MockPaymentListRouter.swift */; };
+		232FBBC22656F3D700172930 /* PaymentListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBC12656F3D700172930 /* PaymentListViewTests.swift */; };
+		232FBBC42656F70B00172930 /* MockPaymentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBC32656F70B00172930 /* MockPaymentListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +114,16 @@
 		232FBBA32656DA0100172930 /* UITableView+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Payoneer.swift"; sourceTree = "<group>"; };
 		232FBBA52656DA4D00172930 /* UITableViewCell+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Payoneer.swift"; sourceTree = "<group>"; };
 		232FBBA72656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewFooterHeaderView+Payoneer.swift"; sourceTree = "<group>"; };
+		232FBBAF2656DFD100172930 /* PaymentListCellViewModelFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListCellViewModelFactoryTests.swift; sourceTree = "<group>"; };
+		232FBBB12656E18600172930 /* PaymentListTableViewDataFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewDataFactoryTests.swift; sourceTree = "<group>"; };
+		232FBBB42656E36E00172930 /* MockPaymentListCellViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListCellViewModelFactory.swift; sourceTree = "<group>"; };
+		232FBBB62656E3B900172930 /* PaymentListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListPresenterTests.swift; sourceTree = "<group>"; };
+		232FBBB92656F27A00172930 /* MockPaymentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListView.swift; sourceTree = "<group>"; };
+		232FBBBB2656F2B600172930 /* MockPaymentListTableViewDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListTableViewDataFactory.swift; sourceTree = "<group>"; };
+		232FBBBD2656F2DC00172930 /* MockPaymentListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListInteractor.swift; sourceTree = "<group>"; };
+		232FBBBF2656F2FA00172930 /* MockPaymentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListRouter.swift; sourceTree = "<group>"; };
+		232FBBC12656F3D700172930 /* PaymentListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListViewTests.swift; sourceTree = "<group>"; };
+		232FBBC32656F70B00172930 /* MockPaymentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +192,7 @@
 		232FBB4C2656C18D00172930 /* PayoneerTests */ = {
 			isa = PBXGroup;
 			children = (
+				232FBBAD2656DFB700172930 /* PaymentListScene */,
 				232FBB4D2656C18D00172930 /* PayoneerTests.swift */,
 				232FBB4F2656C18D00172930 /* Info.plist */,
 			);
@@ -281,6 +302,47 @@
 				232FBB9D2656D3F800172930 /* PaymentListTableViewDataFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		232FBBAD2656DFB700172930 /* PaymentListScene */ = {
+			isa = PBXGroup;
+			children = (
+				232FBBB82656F26E00172930 /* Mocks */,
+				232FBBAE2656DFBF00172930 /* Factories */,
+				232FBBB62656E3B900172930 /* PaymentListPresenterTests.swift */,
+				232FBBC12656F3D700172930 /* PaymentListViewTests.swift */,
+			);
+			path = PaymentListScene;
+			sourceTree = "<group>";
+		};
+		232FBBAE2656DFBF00172930 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				232FBBB32656E36100172930 /* Mocks */,
+				232FBBAF2656DFD100172930 /* PaymentListCellViewModelFactoryTests.swift */,
+				232FBBB12656E18600172930 /* PaymentListTableViewDataFactoryTests.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		232FBBB32656E36100172930 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				232FBBB42656E36E00172930 /* MockPaymentListCellViewModelFactory.swift */,
+				232FBBBB2656F2B600172930 /* MockPaymentListTableViewDataFactory.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		232FBBB82656F26E00172930 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				232FBBB92656F27A00172930 /* MockPaymentListView.swift */,
+				232FBBBD2656F2DC00172930 /* MockPaymentListInteractor.swift */,
+				232FBBBF2656F2FA00172930 /* MockPaymentListRouter.swift */,
+				232FBBC32656F70B00172930 /* MockPaymentListPresenter.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +518,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232FBBB52656E36E00172930 /* MockPaymentListCellViewModelFactory.swift in Sources */,
+				232FBBBE2656F2DC00172930 /* MockPaymentListInteractor.swift in Sources */,
+				232FBBC42656F70B00172930 /* MockPaymentListPresenter.swift in Sources */,
+				232FBBBA2656F27A00172930 /* MockPaymentListView.swift in Sources */,
+				232FBBB22656E18600172930 /* PaymentListTableViewDataFactoryTests.swift in Sources */,
+				232FBBB02656DFD100172930 /* PaymentListCellViewModelFactoryTests.swift in Sources */,
 				232FBB4E2656C18D00172930 /* PayoneerTests.swift in Sources */,
+				232FBBC02656F2FA00172930 /* MockPaymentListRouter.swift in Sources */,
+				232FBBC22656F3D700172930 /* PaymentListViewTests.swift in Sources */,
+				232FBBB72656E3B900172930 /* PaymentListPresenterTests.swift in Sources */,
+				232FBBBC2656F2B600172930 /* MockPaymentListTableViewDataFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

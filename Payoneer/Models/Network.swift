@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Networks: Codable {
+struct Networks: Codable, Equatable {
   let applicable: [Network]
 }
 
-struct Network: Codable {
+struct Network: Codable, Equatable {
   let code: String
   let label: String
   let links: PaymentLink

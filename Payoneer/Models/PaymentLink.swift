@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct PaymentLink: Codable {
+struct PaymentLink: Codable, Equatable {
   let logo: String
 }

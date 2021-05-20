@@ -31,7 +31,7 @@ protocol PaymentListPresenterProtocol: AnyObject {
   func onViewDidLoad()
 }
 
-enum PaymentListPresenterOutput {
+enum PaymentListPresenterOutput: Equatable {
   case showPaymentMethods([PaymentListCellViewModel])
 }
 

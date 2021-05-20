@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct PaymentList: Codable {
+struct PaymentList: Codable, Equatable {
   let networks: Networks
 }
