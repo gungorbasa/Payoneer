@@ -26,6 +26,7 @@
 		232FBB7C2656C35C00172930 /* PaymentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB752656C35C00172930 /* PaymentListViewController.swift */; };
 		232FBB7D2656C35C00172930 /* PaymentListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB762656C35C00172930 /* PaymentListBuilder.swift */; };
 		232FBB7E2656C35C00172930 /* PaymentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB772656C35C00172930 /* PaymentListInteractor.swift */; };
+		232FBB822656C40A00172930 /* UIView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB812656C40A00172930 /* UIView+Payoneer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		232FBB752656C35C00172930 /* PaymentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListViewController.swift; sourceTree = "<group>"; };
 		232FBB762656C35C00172930 /* PaymentListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListBuilder.swift; sourceTree = "<group>"; };
 		232FBB772656C35C00172930 /* PaymentListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListInteractor.swift; sourceTree = "<group>"; };
+		232FBB812656C40A00172930 /* UIView+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Payoneer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		232FBB352656C18B00172930 /* Payoneer */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB802656C3FA00172930 /* Extensions */,
 				232FBB6D2656C27300172930 /* Scenes */,
 				232FBB662656C1BD00172930 /* Networking */,
 				232FBB362656C18B00172930 /* AppDelegate.swift */,
@@ -191,6 +194,14 @@
 				232FBB772656C35C00172930 /* PaymentListInteractor.swift */,
 			);
 			path = PaymentListScene;
+			sourceTree = "<group>";
+		};
+		232FBB802656C3FA00172930 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB812656C40A00172930 /* UIView+Payoneer.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 				232FBB7D2656C35C00172930 /* PaymentListBuilder.swift in Sources */,
 				232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */,
 				232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */,
+				232FBB822656C40A00172930 /* UIView+Payoneer.swift in Sources */,
 				232FBB7E2656C35C00172930 /* PaymentListInteractor.swift in Sources */,
 				232FBB7C2656C35C00172930 /* PaymentListViewController.swift in Sources */,
 				232FBB7A2656C35C00172930 /* PaymentListRouter.swift in Sources */,
