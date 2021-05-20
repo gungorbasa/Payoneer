@@ -15,6 +15,9 @@
 		232FBB432656C18D00172930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232FBB412656C18D00172930 /* LaunchScreen.storyboard */; };
 		232FBB4E2656C18D00172930 /* PayoneerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB4D2656C18D00172930 /* PayoneerTests.swift */; };
 		232FBB592656C18D00172930 /* PayoneerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB582656C18D00172930 /* PayoneerUITests.swift */; };
+		232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB672656C1CC00172930 /* HTTPMethod.swift */; };
+		232FBB6A2656C1E700172930 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB692656C1E700172930 /* Networking.swift */; };
+		232FBB6C2656C20A00172930 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB6B2656C20A00172930 /* Routing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		232FBB542656C18D00172930 /* PayoneerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayoneerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		232FBB582656C18D00172930 /* PayoneerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoneerUITests.swift; sourceTree = "<group>"; };
 		232FBB5A2656C18D00172930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232FBB672656C1CC00172930 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		232FBB692656C1E700172930 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		232FBB6B2656C20A00172930 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		232FBB352656C18B00172930 /* Payoneer */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB662656C1BD00172930 /* Networking */,
 				232FBB362656C18B00172930 /* AppDelegate.swift */,
 				232FBB382656C18B00172930 /* SceneDelegate.swift */,
 				232FBB3A2656C18B00172930 /* ViewController.swift */,
@@ -126,6 +133,16 @@
 				232FBB5A2656C18D00172930 /* Info.plist */,
 			);
 			path = PayoneerUITests;
+			sourceTree = "<group>";
+		};
+		232FBB662656C1BD00172930 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB672656C1CC00172930 /* HTTPMethod.swift */,
+				232FBB692656C1E700172930 /* Networking.swift */,
+				232FBB6B2656C20A00172930 /* Routing.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */,
+				232FBB6A2656C1E700172930 /* Networking.swift in Sources */,
+				232FBB6C2656C20A00172930 /* Routing.swift in Sources */,
 				232FBB3B2656C18B00172930 /* ViewController.swift in Sources */,
 				232FBB372656C18B00172930 /* AppDelegate.swift in Sources */,
 				232FBB392656C18B00172930 /* SceneDelegate.swift in Sources */,
