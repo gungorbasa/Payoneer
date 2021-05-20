@@ -19,6 +19,13 @@
 		232FBB6A2656C1E700172930 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB692656C1E700172930 /* Networking.swift */; };
 		232FBB6C2656C20A00172930 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB6B2656C20A00172930 /* Routing.swift */; };
 		232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB6F2656C29100172930 /* PaymentRoutes.swift */; };
+		232FBB782656C35C00172930 /* PaymentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 232FBB712656C35C00172930 /* PaymentList.storyboard */; };
+		232FBB792656C35C00172930 /* PaymentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB722656C35C00172930 /* PaymentListPresenter.swift */; };
+		232FBB7A2656C35C00172930 /* PaymentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB732656C35C00172930 /* PaymentListRouter.swift */; };
+		232FBB7B2656C35C00172930 /* PaymentListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB742656C35C00172930 /* PaymentListContracts.swift */; };
+		232FBB7C2656C35C00172930 /* PaymentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB752656C35C00172930 /* PaymentListViewController.swift */; };
+		232FBB7D2656C35C00172930 /* PaymentListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB762656C35C00172930 /* PaymentListBuilder.swift */; };
+		232FBB7E2656C35C00172930 /* PaymentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBB772656C35C00172930 /* PaymentListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,13 @@
 		232FBB692656C1E700172930 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		232FBB6B2656C20A00172930 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		232FBB6F2656C29100172930 /* PaymentRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRoutes.swift; sourceTree = "<group>"; };
+		232FBB712656C35C00172930 /* PaymentList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentList.storyboard; sourceTree = "<group>"; };
+		232FBB722656C35C00172930 /* PaymentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListPresenter.swift; sourceTree = "<group>"; };
+		232FBB732656C35C00172930 /* PaymentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListRouter.swift; sourceTree = "<group>"; };
+		232FBB742656C35C00172930 /* PaymentListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListContracts.swift; sourceTree = "<group>"; };
+		232FBB752656C35C00172930 /* PaymentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListViewController.swift; sourceTree = "<group>"; };
+		232FBB762656C35C00172930 /* PaymentListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListBuilder.swift; sourceTree = "<group>"; };
+		232FBB772656C35C00172930 /* PaymentListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +165,7 @@
 		232FBB6D2656C27300172930 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				232FBB7F2656C36000172930 /* PaymentListScene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -162,6 +177,20 @@
 				232FBB6F2656C29100172930 /* PaymentRoutes.swift */,
 			);
 			path = Routes;
+			sourceTree = "<group>";
+		};
+		232FBB7F2656C36000172930 /* PaymentListScene */ = {
+			isa = PBXGroup;
+			children = (
+				232FBB712656C35C00172930 /* PaymentList.storyboard */,
+				232FBB722656C35C00172930 /* PaymentListPresenter.swift */,
+				232FBB732656C35C00172930 /* PaymentListRouter.swift */,
+				232FBB742656C35C00172930 /* PaymentListContracts.swift */,
+				232FBB752656C35C00172930 /* PaymentListViewController.swift */,
+				232FBB762656C35C00172930 /* PaymentListBuilder.swift */,
+				232FBB772656C35C00172930 /* PaymentListInteractor.swift */,
+			);
+			path = PaymentListScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +299,7 @@
 				232FBB432656C18D00172930 /* LaunchScreen.storyboard in Resources */,
 				232FBB402656C18D00172930 /* Assets.xcassets in Resources */,
 				232FBB3E2656C18B00172930 /* Main.storyboard in Resources */,
+				232FBB782656C35C00172930 /* PaymentList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,13 +324,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232FBB7D2656C35C00172930 /* PaymentListBuilder.swift in Sources */,
 				232FBB702656C29100172930 /* PaymentRoutes.swift in Sources */,
 				232FBB682656C1CC00172930 /* HTTPMethod.swift in Sources */,
+				232FBB7E2656C35C00172930 /* PaymentListInteractor.swift in Sources */,
+				232FBB7C2656C35C00172930 /* PaymentListViewController.swift in Sources */,
+				232FBB7A2656C35C00172930 /* PaymentListRouter.swift in Sources */,
 				232FBB6A2656C1E700172930 /* Networking.swift in Sources */,
 				232FBB6C2656C20A00172930 /* Routing.swift in Sources */,
 				232FBB3B2656C18B00172930 /* ViewController.swift in Sources */,
+				232FBB7B2656C35C00172930 /* PaymentListContracts.swift in Sources */,
 				232FBB372656C18B00172930 /* AppDelegate.swift in Sources */,
 				232FBB392656C18B00172930 /* SceneDelegate.swift in Sources */,
+				232FBB792656C35C00172930 /* PaymentListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
