@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,7 +42,6 @@
 		232FBBA42656DA0100172930 /* UITableView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA32656DA0100172930 /* UITableView+Payoneer.swift */; };
 		232FBBA62656DA4D00172930 /* UITableViewCell+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA52656DA4D00172930 /* UITableViewCell+Payoneer.swift */; };
 		232FBBA82656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBA72656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift */; };
-		232FBBAB2656DD2F00172930 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 232FBBAA2656DD2F00172930 /* Nuke */; };
 		232FBBB02656DFD100172930 /* PaymentListCellViewModelFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBAF2656DFD100172930 /* PaymentListCellViewModelFactoryTests.swift */; };
 		232FBBB22656E18600172930 /* PaymentListTableViewDataFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBB12656E18600172930 /* PaymentListTableViewDataFactoryTests.swift */; };
 		232FBBB52656E36E00172930 /* MockPaymentListCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBB42656E36E00172930 /* MockPaymentListCellViewModelFactory.swift */; };
@@ -53,6 +52,7 @@
 		232FBBC02656F2FA00172930 /* MockPaymentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBBF2656F2FA00172930 /* MockPaymentListRouter.swift */; };
 		232FBBC22656F3D700172930 /* PaymentListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBC12656F3D700172930 /* PaymentListViewTests.swift */; };
 		232FBBC42656F70B00172930 /* MockPaymentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBC32656F70B00172930 /* MockPaymentListPresenter.swift */; };
+		232FBBCC2657175C00172930 /* UIImageView+Payoneer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232FBBCB2657175C00172930 /* UIImageView+Payoneer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +124,7 @@
 		232FBBBF2656F2FA00172930 /* MockPaymentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListRouter.swift; sourceTree = "<group>"; };
 		232FBBC12656F3D700172930 /* PaymentListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListViewTests.swift; sourceTree = "<group>"; };
 		232FBBC32656F70B00172930 /* MockPaymentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPaymentListPresenter.swift; sourceTree = "<group>"; };
+		232FBBCB2657175C00172930 /* UIImageView+Payoneer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Payoneer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +132,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				232FBBAB2656DD2F00172930 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +264,7 @@
 				232FBBA32656DA0100172930 /* UITableView+Payoneer.swift */,
 				232FBBA52656DA4D00172930 /* UITableViewCell+Payoneer.swift */,
 				232FBBA72656DABA00172930 /* UITableViewFooterHeaderView+Payoneer.swift */,
+				232FBBCB2657175C00172930 /* UIImageView+Payoneer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -362,7 +363,6 @@
 			);
 			name = Payoneer;
 			packageProductDependencies = (
-				232FBBAA2656DD2F00172930 /* Nuke */,
 			);
 			productName = Payoneer;
 			productReference = 232FBB332656C18B00172930 /* Payoneer.app */;
@@ -436,7 +436,6 @@
 			);
 			mainGroup = 232FBB2A2656C18B00172930;
 			packageReferences = (
-				232FBBA92656DD2F00172930 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 232FBB342656C18B00172930 /* Products */;
 			projectDirPath = "";
@@ -511,6 +510,7 @@
 				232FBB902656CFDA00172930 /* URLRequest+Payoneer.swift in Sources */,
 				232FBBA22656D9AD00172930 /* PaymentListCell.swift in Sources */,
 				232FBB792656C35C00172930 /* PaymentListPresenter.swift in Sources */,
+				232FBBCC2657175C00172930 /* UIImageView+Payoneer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,25 +845,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		232FBBA92656DD2F00172930 /* XCRemoteSwiftPackageReference "Nuke" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.6.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		232FBBAA2656DD2F00172930 /* Nuke */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 232FBBA92656DD2F00172930 /* XCRemoteSwiftPackageReference "Nuke" */;
-			productName = Nuke;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 232FBB2B2656C18B00172930 /* Project object */;
 }

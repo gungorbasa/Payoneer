@@ -5,7 +5,6 @@
 //  Created by Gungor Basa on 5/20/21.
 //
 
-import Nuke
 import UIKit
 
 final class PaymentListCell: UITableViewCell {
@@ -24,10 +23,9 @@ final class PaymentListCell: UITableViewCell {
   }
 
   func configure(with viewModel: PaymentListCellViewModel) {
-    Nuke.cancelRequest(for: iconImageView)
     titleLabel.text = viewModel.title
     guard let imageURL = viewModel.imageURL else { return }
-    Nuke.loadImage(with: imageURL, into: iconImageView)
+    iconImageView.loadImageUsingCache(withUrl: imageURL.absoluteString)
   }
 }
 
@@ -70,7 +68,7 @@ private extension PaymentListCell {
     horizontalStack.addArrangedSubview(iconImageView)
     iconImageView.widthAnchor.constraint(equalToConstant: 55).isActive = true
     iconImageView.heightAnchor.constraint(equalToConstant: 55).isActive = true
-    iconImageView.contentMode = .center
+    iconImageView.contentMode = .scaleAspectFit
   }
 
   func setupTitleLabel() {
