@@ -30,13 +30,24 @@ final class PaymentListPresenterTests: XCTestCase {
     XCTAssertTrue(interactor.isFetched, "Should call interactor fetch method")
   }
 
-  func testDisplayPaymentList() {
+  func testSetTitle() {
     let presenter = PaymentListPresenter(
       view,
       interactor: interactor,
       dataFactory: dataFactory,
       router: router
     )
+    presenter.onViewDidLoad()
+    XCTAssertTrue(view.output == .setTitle("Payment Methods"))
+  }
+
+  func testDisplayPaymentList() {
+      let presenter = PaymentListPresenter(
+        view,
+        interactor: interactor,
+        dataFactory: dataFactory,
+        router: router
+      )
 
     let paymentList = PaymentList(networks: Networks(applicable: []))
     let result: PaymentListInteractorOutput = .payments(paymentList)

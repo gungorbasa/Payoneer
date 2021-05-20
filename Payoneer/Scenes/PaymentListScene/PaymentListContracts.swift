@@ -33,6 +33,7 @@ protocol PaymentListPresenterProtocol: AnyObject {
 
 enum PaymentListPresenterOutput: Equatable {
   case showPaymentMethods([PaymentListCellViewModel])
+  case setTitle(String)
 }
 
 // MARK: - View

@@ -31,6 +31,7 @@ final class PaymentListPresenter: PaymentListPresenterProtocol {
 
   func onViewDidLoad() {
     interactor.fetchPaymentList()
+    view?.handleOutput(.setTitle("Payment Methods"))
   }
 }
 

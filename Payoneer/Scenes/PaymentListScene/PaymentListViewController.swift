@@ -40,6 +40,8 @@ extension PaymentListViewController: PaymentListViewProtocol {
     switch output {
     case .showPaymentMethods(let viewModels):
       dataSource.applySnapshot(with: viewModels)
+    case .setTitle(let title):
+      self.title = title
     }
   }
 }
